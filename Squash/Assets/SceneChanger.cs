@@ -3,10 +3,16 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-    public int scene;
+    public int sceneMenu;
+    public int sceneJouer;
 
-    public void ChangeScene()
+    public void ChangeSceneMenu()
     {
-        SceneManager.LoadScene(scene);
+        SceneManager.LoadScene(sceneMenu);
+    }
+
+    public void ChangeSceneJouer()
+    {
+        SceneManager.LoadScene(sceneJouer);
     }
 }
