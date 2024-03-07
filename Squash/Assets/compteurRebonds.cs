@@ -15,22 +15,23 @@ public class CollisionCounter : MonoBehaviour
         if (collision.gameObject.CompareTag("sol"))
         {
             nbRebonds++;
+            Debug.Log("rebons : " + nbRebonds);
             if (nbRebonds >= 2)
             {
-                if (nbCollisionMur > score || score == 0)
+                if (nbCollisionMur > score)
                 {
                     score = nbCollisionMur;
                     UpdateCompterTexte();
-                    nbCollisionMur = 0;
-                    nbRebonds = 0;
                 }
+                nbRebonds = 0;
+                nbCollisionMur = 0;
             }
-            
         }
 
         if (collision.gameObject.CompareTag("wallFront"))
         {
             nbCollisionMur++;
+            Debug.Log("collision : " +  nbCollisionMur);
             nbRebonds = 0;
         }
     }
@@ -39,7 +40,7 @@ public class CollisionCounter : MonoBehaviour
     {
         if (compteurTexte != null)
         {
-            compteurTexte.text = "Score : " + nbCollisionMur.ToString();
+            compteurTexte.text = "Score : " + score.ToString();
         }
     }
     void Update()
