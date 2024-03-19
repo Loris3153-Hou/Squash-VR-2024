@@ -7,6 +7,8 @@ TagManager:
   - Anchor
   - wallFront
   - sol
+  - cible
+  - balle
   layers:
   - Default
   - TransparentFX
