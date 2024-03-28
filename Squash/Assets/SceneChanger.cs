@@ -8,7 +8,7 @@ public class SceneChanger : MonoBehaviour
     public int sceneEntrainementLudique;
     public int sceneStats;
     public int scenePara;
-
+    public int sceneScore;
     public void ChangeSceneMenu()
     {
         SceneManager.LoadScene(sceneMenu);
@@ -32,5 +32,10 @@ public class SceneChanger : MonoBehaviour
     public void ChangeScenePara()
     {
         SceneManager.LoadScene(scenePara);
+    }
+
+    public void changerSceneScore()
+    {
+        SceneManager.LoadScene(sceneScore);
     }
 }
