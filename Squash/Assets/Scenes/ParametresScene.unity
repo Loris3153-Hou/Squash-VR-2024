@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 7595122}
   - component: {fileID: 7595121}
   - component: {fileID: 7595124}
+  - component: {fileID: 7595125}
   m_Layer: 0
   m_Name: playlist1
   m_TagString: Untagged
@@ -231,6 +232,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 7595125}
+        m_TargetAssemblyTypeName: ChoixPasPlaylist, Assembly-CSharp
+        m_MethodName: Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7595122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -287,6 +300,19 @@ MonoBehaviour:
   sceneStats: 0
   scenePara: 0
   sceneScore: 0
+--- !u!114 &7595125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7595119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda257e456fd6cb40b64a2f71384ea93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bouton: {fileID: 501235443}
 --- !u!1 &55617885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,7 +1155,6 @@ GameObject:
   - component: {fileID: 501235444}
   - component: {fileID: 501235443}
   - component: {fileID: 501235442}
-  - component: {fileID: 501235446}
   m_Layer: 0
   m_Name: playlist4
   m_TagString: Untagged
@@ -1196,7 +1221,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.03137255, g: 0, b: 0.39607844, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.03137255, g: 0, b: 0.39607844, a: 1}
     m_SelectedColor: {r: 0.03137255, g: 0, b: 0.39607844, a: 1}
@@ -1244,7 +1269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6150943, g: 0.6150943, b: 0.6150943, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7058824}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1269,18 +1294,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 501235440}
   m_CullTransparentMesh: 1
---- !u!114 &501235446
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 501235440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dda257e456fd6cb40b64a2f71384ea93, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &587545170
 GameObject:
   m_ObjectHideFlags: 0
@@ -1517,6 +1530,7 @@ GameObject:
   - component: {fileID: 898070672}
   - component: {fileID: 898070671}
   - component: {fileID: 898070670}
+  - component: {fileID: 898070674}
   m_Layer: 0
   m_Name: playlist3
   m_TagString: Untagged
@@ -1630,6 +1644,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 898070674}
+        m_TargetAssemblyTypeName: ChoixPasPlaylist, Assembly-CSharp
+        m_MethodName: Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &898070672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1668,6 +1694,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 898070668}
   m_CullTransparentMesh: 1
+--- !u!114 &898070674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898070668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda257e456fd6cb40b64a2f71384ea93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bouton: {fileID: 501235443}
 --- !u!4 &975266696 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 00c9c177e828a57439e290aef2a23b3f, type: 3}
@@ -2374,6 +2413,7 @@ GameObject:
   - component: {fileID: 1420264224}
   - component: {fileID: 1420264223}
   - component: {fileID: 1420264222}
+  - component: {fileID: 1420264226}
   m_Layer: 0
   m_Name: playlist2
   m_TagString: Untagged
@@ -2487,6 +2527,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1420264226}
+        m_TargetAssemblyTypeName: ChoixPasPlaylist, Assembly-CSharp
+        m_MethodName: Click
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1420264224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2525,6 +2577,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1420264220}
   m_CullTransparentMesh: 1
+--- !u!114 &1420264226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1420264220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda257e456fd6cb40b64a2f71384ea93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bouton: {fileID: 501235443}
 --- !u!1 &1438485413
 GameObject:
   m_ObjectHideFlags: 0
