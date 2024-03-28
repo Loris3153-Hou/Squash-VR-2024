@@ -7,8 +7,8 @@ public class ChoixPasPlaylist : MonoBehaviour {
     private ColorBlock colors;
 
     public void Click() {
-        bouton = GetComponent<Button>();
-        colors = GetComponent<Button>().colors;
+        bouton = bouton.GetComponent<Button>();
+        colors = bouton.GetComponent<Button>().colors;
         colors.normalColor = Color.white;
         bouton.colors = colors;
     }
