@@ -9,6 +9,7 @@ TagManager:
   - sol
   - cible
   - balle
+  - raquette
   layers:
   - Default
   - TransparentFX

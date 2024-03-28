@@ -1059,7 +1059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Text_Timer: {fileID: 392627481}
-  TimerEnSeconde: 180
+  TimerEnSeconde: 20
   scene: 2
 --- !u!114 &392627481
 MonoBehaviour:
@@ -1616,7 +1616,7 @@ GameObject:
   - component: {fileID: 697956209}
   m_Layer: 0
   m_Name: Cube_Poignee
-  m_TagString: Untagged
+  m_TagString: raquette
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

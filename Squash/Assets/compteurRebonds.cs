@@ -9,10 +9,18 @@ public class CollisionCounter : MonoBehaviour
     private int nbCollisionMur = 0;
     private int nbRebonds = 0;
     private int score = 0;
+    private int rebondsSurMur = 0;
+    private int rebondsSurRaquette = 0;
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("sol"))
+        if(collision.gameObject.CompareTag("raquette"))
+        {
+            rebondsSurRaquette++;
+            Debug.Log("rebons raquette : " + rebondsSurRaquette);
+        }
+
+            if (collision.gameObject.CompareTag("sol"))
         {
             nbRebonds++;
             Debug.Log("rebons : " + nbRebonds);
@@ -30,6 +38,7 @@ public class CollisionCounter : MonoBehaviour
 
         if (collision.gameObject.CompareTag("wallFront"))
         {
+            rebondsSurMur++;
             nbCollisionMur++;
             Debug.Log("collision : " +  nbCollisionMur);
             nbRebonds = 0;
@@ -46,5 +55,7 @@ public class CollisionCounter : MonoBehaviour
     void Update()
     {
         PlayerPrefs.SetString("score", "Score : " + score);
+        PlayerPrefs.SetString("rebondsMur", rebondsSurMur + " rebonds sur le mur");
+        PlayerPrefs.SetString("rebondsRaquette", rebondsSurRaquette + " rebonds sur la raquette");
     }
 }
