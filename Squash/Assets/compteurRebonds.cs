@@ -54,6 +54,8 @@ public class CollisionCounter : MonoBehaviour
     }
     void Update()
     {
+        PlayerPrefs.SetString("precision", null);
+        PlayerPrefs.SetInt("score_stat", score);
         PlayerPrefs.SetString("score", "Score : " + score);
         PlayerPrefs.SetString("rebondsMur", rebondsSurMur + " rebonds sur le mur");
         PlayerPrefs.SetString("rebondsRaquette", rebondsSurRaquette + " rebonds sur la raquette");

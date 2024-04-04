@@ -10,6 +10,7 @@ TagManager:
   - cible
   - balle
   - raquette
+  - raquette2
   layers:
   - Default
   - TransparentFX

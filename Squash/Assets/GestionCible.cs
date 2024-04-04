@@ -47,6 +47,7 @@ public class GestionCible : MonoBehaviour
 
     void Update()
     {
+        PlayerPrefs.SetInt("score_stat", score);
         PlayerPrefs.SetString("score", "Score : " + score);
     }
 
